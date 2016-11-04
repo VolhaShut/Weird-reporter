@@ -7,7 +7,7 @@ var xl=require('excel4node');
 
 // Custom reporter
 var Reporter = function(options) {
-  var _defaultOutputFile = path.resolve(process.cwd(), './_test-output', 'protractor-results.xls');
+  var _defaultOutputFile = path.resolve(process.cwd(), './_test-output', 'protractor-results.xlsx');
   options.outputFile = options.outputFile || _defaultOutputFile;
 
   var wb=new xl.Workbook();
